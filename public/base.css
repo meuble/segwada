@@ -1,0 +1,209 @@
+/* ==============================================
+   FEUILLE DE STYLES SEGWADA © Segwada 2010
+   Produced by yohann long-him-nam
+   Validated by W3C.   
+   ============================================== */
+
+*{margin: 0; padding:0;}
+
+html, body{
+	height: 100%; /* Fixation du footer en bas de page */
+}
+
+body {
+	background-color: #f0f0f0;
+	background-image:url(/images/body_fond2.png);
+	background-position:center top;
+	background-repeat:repeat-y;
+	margin-left: auto;
+	margin-right: auto;
+	font-size: .8em;
+	color: black;
+	margin: 0;
+	padding: 0;
+}
+a{text-decoration: none;}
+li { list-style-type: none;}
+/images{ border: none;}
+
+#global {
+	background:url(/images/content.jpg) repeat-y;
+	width: 900px;
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+/*    min-height: 100%;*/
+	color:#000;
+}
+/* ************************************************************************************************* */
+/*                            En-tête : LOGO + FOND + DRAPEAU DE LANGUE                               */
+/* ************************************************************************************************* */
+
+#entete{height: 150px;background: url(/images/fond_header.jpg) no-repeat;}
+#entete h1 {margin: 0;}
+
+#logo h1 a{
+	display: block;
+	height: 120px;
+	background: url(/images/logo.png) no-repeat;	
+	width: 600px;
+	margin-left: 10px;
+	padding-top : 25px;
+	height: 150px;
+	position: relative;
+	top: 30px;
+}
+
+#flags{position: absolute;top: 0px;right: 0px;padding-right: 10px;width: 70px;height:34px;}
+#flags ul li{float: left;}
+#flags ul li a{display:block;width: 34px;height:34px;padding:0; margin:0;}
+#flags ul li a.fr_lang{	background:url(/images/fr_flag.png) no-repeat transparent;}
+#flags ul li a.en_lang{background:url(/images/en_flag.png) no-repeat transparent;}
+
+
+/* ******************************************************************************************* */
+/* 	                   Barre de navigation (fil d'ariane) + recherche                          */
+/* ******************************************************************************************* */
+
+#barre_nav{	border-top: 1px solid #c8c8c8;	border-bottom: 1px solid #c8c8c8;background: #f0f0f0;color: black;height: 30px;} 
+
+#fil_ariane{float:left;height:30px;overflow:hidden;width:700px;}
+#fil_ariane li {float:left;list-style-type: none;}
+#fil_ariane li a {
+	background:url(/images/bg_li_nav.png) no-repeat scroll right center transparent;
+	color:#8ad86f;
+	display:block;
+	font-size:10px;
+	font-weight:bold;
+	height:21px;
+	margin:0 8px 0 0;
+	padding:10px 14px 0 0;
+	text-transform:uppercase;
+}
+#fil_ariane li.home a {
+	background:url(/images/home_nav.jpg) no-repeat scroll 0 0 transparent;
+	height:30px;
+	margin:0 7px 0 0;
+	padding:0;
+	width:40px;
+}
+#fil_ariane li.home a:hover{background-position: 0 -28px;}
+
+#search_form{float: right;width: 150px;	height:25px; margin-right:10px;	padding:5px 0 0 0;}
+#search_form input.input_search_text{
+	background:url(/images/search_input.png) no-repeat scroll 0 0 transparent;
+	border:0 none;
+	color:#c8c8c8;
+	float:left;
+	height:22px;
+	position:relative;
+	padding-left: 6px;
+	width:107px;
+}
+#search_form input.input_search_btn {
+	background:url(/images/search_btn.png) no-repeat scroll 0 0 transparent;
+	border:0 none;
+	cursor:pointer;
+	float:right;
+	height:22px;
+	width:37px;
+}
+
+/* *************************************************************************************************************** */
+/*            Colonne de gauche (150px\fond gris)  +  contenu + colonne droite ( 150px\fond blanc)                 */
+/* *************************************************************************************************************** */
+
+#bloc_principal{width:900px;}
+#bloc_principal .column{ float: left;min-height:100%;}
+#col_gauche{width: 150px;background: #f0f0f0;}
+#col_gauche #menu_nav ul li{list-style-type: none;	}
+#col_droite{width: 150px;}
+#contenu{float: left; padding: 10px 5px 0px; width: 590px;background: white; }
+
+/**** Menu jQuery ****/
+
+ul#menu, ul#menu ul { list-style-type:none; margin: 0; padding: 0; width: 149px; border-right: 1px solid #c8c8c8;}
+ul#menu a { display: block; text-decoration: none;}
+ul#menu li { margin-top: 1px;}
+ul#menu li a { color: #aaa;/*#7A996F;	*/ padding: 0.5em; background: url(/images/menu_btn.png); }
+ul#menu li a:hover, ul#menu li a:active {color: #fff;background: url(/images/menu_btn_selected.png);}
+ul#menu li ul li a { background: #aaa; color: #fff; padding-left: 20px;}
+ul#menu li ul li a:hover { background: #8ad86f; color:#fff; border-left: 5px #fff solid; padding-left: 15px;}
+
+
+/* ************************************************************************************************ */
+/*                                             FOOTER                                               */
+/* ************************************************************************************************ */
+
+#footer {
+	clear: both;
+	text-align: center; color: #aaa;
+/*	position: absolute;bottom: 0;padding: 10px 0 10px 0;width: 980px; text-align: center; color: #aaa;*/
+}
+#footer ul li {	display: inline;list-style-type: none;}
+#footer ul li a{color: #aaa;}
+#footer ul li a:hover{color: #8ad86f;}
+
+.center {
+	text-align: center;
+}
+
+.clear {
+	clear: both;
+}
+
+marged {
+	margin: 20px 0;
+}
+
+#article {
+	margin: 0 20px;
+	font-size: 16px	;
+}
+
+#article p {
+	margin: 10px 0;
+}
+
+#article #welcome_picture {
+	margin: 50px auto;
+}
+
+#article #article_pict {
+	float: left;
+	margin: 0 30px 10px 0 ;
+}
+
+#article #contact h2 {
+	margin: 20px 0;
+}
+
+#article #contact a {
+	font-size: 20px;
+	color: #000;
+}
+
+#article #contact a:hover {
+	text-decoration: underline;
+}
+
+#login_form {
+	position: absolute;
+	right: 20px;
+	top: 75px;
+}
+
+#login_form p {
+	display: block;
+	text-align: right;
+	margin: 2px;
+}
+
+#login_form p input {
+	width: 100px;
+	margin: 0;
+}
+
+#login_form p label {
+	display: inline;
+}
