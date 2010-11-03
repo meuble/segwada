@@ -1,0 +1,170 @@
+/* ==============================================
+   FEUILLE DE STYLES SEGWADA © Segwada 2010
+   Produced by yohann long-him-nam
+   Validated by W3C.   
+   ============================================== */
+
+/* ************************************************************************************************* */
+/*                                    GLOBALE : POSITION - TAILLE                                    */
+/* ************************************************************************************************* */   
+   
+*{margin: 0; padding: 0;}
+html, body{ height: 100%; /* Nécessaire pour la colonne factice */}
+body {
+	background: #E6E6E6 url(/images/body_fond.png) center top repeat-y;	
+	margin: 0 auto 0 auto;
+	padding: 0;
+	font-size: 12px;
+	font-family:"Trebuchet MS",Verdana,"Times New Roman",Times,serif;
+}
+
+#global{
+	background: url(/images/content.jpg) center top repeat-y; 
+	min-height: 100%;	
+	margin: 0 auto 0 auto;	
+	width:980px;
+}
+#content {width: 100%; position:relative;}
+#content #entete{height: 296px;background: #ffffff url(/images/maquette_banniere_V1.jpg) no-repeat;}
+
+#content #entete #flashMovie{margin-left:206px;margin-top:95px;padding:0;}
+#content #barre_nav{height: 30px;} 
+
+#content #main_content{position: relative;width:980px;}
+#content #main_content .column{ float: left;}
+#content #main_content #col_gauche{width: 150px;}
+#content #main_content #col_droite{padding: 10px 5px 0px; width: 820px;}
+
+#footer {
+	width: 100%; 
+	z-index: 0;
+	position: relative;  /* Technique Footer bas de page : Nécessaire pour Safari */
+}
+
+/* ************************************************************************************************* */
+/*                                     GLOBALE : COULEUR - FONT                                      */
+/* ************************************************************************************************* */
+
+#content {background: transparent; 	color: #000;}
+#content #entete{color: #000;}
+#content #barre_nav{	
+	border-top: 1px solid #c8c8c8;	
+	border-bottom: 1px solid #c8c8c8;
+	background: #f0f0f0;
+	color: black;
+} 
+
+#content #main_content #col_gauche{background: #f0f0f0;}
+#content #main_content #col_droite{background: #fff; }
+
+#footer {background: #f0f0f0;}
+.greenColor{color:#98b35d;}
+/* ************************************************************************************************* */
+/*                                 GLOBALE : PROPRIETES COMMUNES                                     */
+/* ************************************************************************************************* */
+
+a{text-decoration: none;}
+a:hover{color: #98b35d;}
+li { list-style-type: none;}
+img{ border: none;}
+
+/* ************************************************************************************************* */
+/*                            En-tête : LOGO + FOND + DRAPEAU DE LANGUE                               */
+/* ************************************************************************************************* */
+
+#entete h1 {margin: 0;}
+
+#logo{padding-top : 25px;}
+#logo h1{height: 120px;/*background: url(img/logo.png) no-repeat;*/ display:none;	width: 600px;margin-left: 10px;}
+
+#flags{position: absolute;top: 0px;right: 0px;padding-right: 10px;width: 70px;height:34px;}
+#flags ul li{float: left;}
+#flags ul li a{display:block;width: 34px;height:34px;padding:0; margin:0;}
+#flags ul li a.fr_lang{	background:url(/images/fr_flag.png) no-repeat transparent;}
+#flags ul li a.en_lang{background:url(/images/en_flag.png) no-repeat transparent;}
+
+
+/* ******************************************************************************************* */
+/* 	                   Barre de navigation (fil d'ariane) + recherche                          */
+/* ******************************************************************************************* */
+
+#fil_ariane{float:left;height:30px;overflow:hidden;width:700px;}
+#fil_ariane li {float:left;list-style-type: none;}
+#fil_ariane li a {
+	background:url(/images/bg_li_nav.png) no-repeat scroll right center transparent;
+	color:#98b35d;
+	display:block;
+	font-size:10px;
+	font-weight:bold;
+	height:21px;
+	margin:0 8px 0 0;
+	padding:10px 14px 0 0;
+	text-transform:uppercase;
+}
+#fil_ariane li.home a {
+	background:url(/images/home_nav.jpg) no-repeat scroll 0 0 transparent;
+	height:30px;
+	margin:0 7px 0 0;
+	padding:0;
+	width:40px;
+}
+#fil_ariane li.home a:hover{background-position: 0 -28px;}
+
+#search_form{float: right;width: 150px;	height:25px; margin-right:10px;	padding:5px 0 0 0;}
+#search_form input.input_search_text{
+	background:url(/images/search_input.png) no-repeat scroll 0 0 transparent;
+	border:0 none;
+	color:#c8c8c8;
+	float:left;
+	height:22px;
+	position:relative;
+	padding-left: 6px;
+	width:107px;
+}
+#search_form input.input_search_btn {
+	background:url(/images/search_btn.png) no-repeat scroll 0 0 transparent;
+	border:0 none;
+	cursor:pointer;
+	float:right;
+	height:22px;
+	width:37px;
+}
+
+/* *************************************************************************************************************** */
+/*                                           MENU JQUERY DE GAUCHE                                                 */
+/* *************************************************************************************************************** */
+
+
+/**** Menu jQuery ****/
+
+ul#menu, ul#menu ul { list-style-type:none; margin: 0; padding: 0; width: 149px; border-right: 1px solid #c8c8c8; font-size: 13px;}
+ul#menu a { display: block; text-decoration: none;}
+ul#menu li { margin-top: 1px;}
+ul#menu li a { color: #aaa;/*#7A996F;	*/ padding: 0.5em; background: url(/images/menu_btn.png) no-repeat;}
+ul#menu li a:hover, ul#menu li a:active {color: #fff;background: url(/images/menu_btn_selected.png) no-repeat;}
+ul#menu li ul li a { background: #aaa; color: #fff; padding-left: 20px;}
+ul#menu li ul li a:hover { background: #98b35d; color:#fff; border-left: 5px #fff solid; padding-left: 15px;}
+
+/* ************************************************************************************************ */
+/*                                        BOOKMARKING                                               */
+/* ************************************************************************************************ */
+
+#bookmarking{position: fixed;bottom: 0;	margin-left: 8px;z-index:1;}
+
+/* *************************************************************************************************************** */
+/*                                   BLOC PRINCIPAL DE CONTENU (#main_content)                                     */
+/* *************************************************************************************************************** */
+
+.center { text-align: center; }
+.clear { clear: both; }
+.marged {	margin: 20px 0; }
+
+
+/* ************************************************************************************************ */
+/*                                             FOOTER                                               */
+/* ************************************************************************************************ */
+
+#footer ul li {	display: inline;list-style-type: none; }
+#footer ul li a{color: #aaa;}
+#footer ul li a:hover{color: #98b35d;}
+#list_footer{border-top: 1px solid #c8c8c8; width: 830px; margin-left: 149px; padding-top: 8px;text-align:center;}

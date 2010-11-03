@@ -1,0 +1,57 @@
+#title_article{margin-left: 20px ;font-size: 16px;}
+#title_article h2{font-weight: bold; color: #aaa;}
+#article {margin: 0 20px; font-size: 12px;}
+#article p {margin: 10px 0; text-align: justify;}
+#article #welcome_picture {margin: 50px auto;}
+#article #article_pict {float: left;margin: 0 10px 10px 0 ;}
+#article #article_pict_2 {float: right;margin: 0 0 10px 10px ;}
+#article #contact h2 {margin: 20px 0;}
+#article #contact a {	font-size: 20px;color: #000;}
+#article #contact a:hover {color:#98b35d;/*#8ad86f;*/}
+
+
+#galerie_article{width: 100%;display:block;}
+
+
+
+#details_segway{ clear:both;margin-left: 20px; display:none; width:100%;}
+#details_segway table.tab_details_segway{border: 1px dashed #98B35D;	width: 450px; margin:20px auto;}
+#details_segway table.tab_details_segway tr td{vertical-align: center;}
+#details_segway table.tab_details_segway .title, #details_segway table.tab_details_segway .properties  {background: f0f0f0;}	
+#details_segway table.tab_details_segway .title_2, #details_segway table.tab_details_segway .properties_2  {background: #98b35d;}
+#details_segway table.tab_details_segway .title, #details_segway table.tab_details_segway .title_2{text-align: right; font-weight: bold;}
+#details_segway table.tab_details_segway .properties , #details_segway table.tab_details_segway .properties_2 {text-align: left;padding-left: 10px;}	
+
+#lien_details_article{margin-left: 20px; width:100%;}
+#lien_details_article a{ color:#AAAAAA;}
+#lien_details_article a:hover{ color:#98b35d;}
+#lien_details_article h2{padding-top: 14px;font-size:16px;}
+
+
+#details_segway_title, #title_gallery, #details_to_segwayFR{color:#AAAAAA;height:50px;padding-left:60px;width:200px;float:left;}
+#details_segway_title{background:url(/images/details_icons.png) no-repeat 0 0 transparent;}
+#title_gallery{background:url(/images/gallery_icons.png) no-repeat 0 0 transparent;}
+#details_to_segwayFR{background:url(/images/logo_segway.jpg) no-repeat 0 0 transparent;}
+
+#article #welcome_picture {
+	margin: 50px auto;
+}
+
+#article #article_pict {
+	float: left;
+	margin: 0 30px 10px 0 ;
+}
+
+#article #contact h2 {
+	margin: 20px 0;
+}
+
+#article #contact a {
+	font-size: 20px;
+	color: #000;
+}
+
+#article #contact a:hover {
+	text-decoration: underline;
+}
+
