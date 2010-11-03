@@ -2,6 +2,7 @@ require 'rubygems'
 require 'sinatra'
 
 get '/' do
+  @menu = ["", '']
   @bread_crumbs = []
   erb :home
 end
